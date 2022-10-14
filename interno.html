@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Interno</title>
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+
+        }
+        h1 {
+            text-align: center;
+            background-color: black;
+            color: white;
+            padding: 20px;
+        }
+        nav ul {
+            background-color:   #757575;
+            width: 100%;
+            list-style-type: none;
+            text-align: center;
+        }
+        nav li {    
+            display: inline-flex;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            width: 150px;
+
+        }
+        img{
+            width: 200px; 
+            height: 200px; 
+            border-radius: 50%; 
+            object-fit: cover;
+        }
+        .contenido{
+            display: flex; 
+            margin: 60px;
+        }
+        .articulos{
+            width: 80%; 
+            border-right: 3px solid black
+        }
+        .secciones{
+            display: flex;
+            align-items: center;
+            padding: 40px;
+        }
+        .menu-secundario{
+            width: 20%; 
+            margin-top: 60px;
+        }
+        .menu-secundario a{
+            display: block; 
+            text-align: center; 
+            color: black; 
+            margin-bottom: 20px;
+        }
+        footer {
+            width: 100%;
+            height: 200%;
+            background-color: black;
+            color: white;
+            margin-top: 40px;
+        }
+        footer p {
+            text-align: center;
+            padding: 50px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Estilo Inline/Intero/Externo</h1>
+    <nav>
+        <ul>
+            <li><a href="">Inline</a></li>
+            <li><a href="">Interno</a></li>
+            <li><a href="">Externo</a></li>
+        </ul>
+    </nav>
+    <div class="contenido">
+        <div class="articulos">
+            <div class="secciones">
+                <div>
+                    <h2>Inline</h2>
+                    <p>El CSS inline se utiliza para dar estilo a un elemento HTML específico. Para este tipo de estilo CSS, sólo tendrás que añadir el atributo style a cada etiqueta HTML, sin utilizar selectores.
+
+                        Este tipo de CSS no es realmente recomendable, ya que cada etiqueta HTML debe ser estilizada individualmente. La gestión de tu sitio web puede resultar demasiado difícil si sólo utilizas CSS inline.
+                        
+                        Sin embargo, el CSS inline en HTML puede ser útil en algunas situaciones. Por ejemplo, en los casos en los que no tienes acceso a archivos CSS o necesitas aplicar estilos para un solo elemento.</p>
+                </div>
+                <div><img src="logo.png" alt=""></div>
+            </div>
+            <div class="secciones">
+                <div>
+                    <h2>Interno</h2>
+                    <p>El CSS interno o incrustado requiere que añadas la etiqueta style en la sección head de tu documento HTML.
+
+                        Este estilo CSS es un método eficaz para dar estilo a una sola página. Sin embargo, utilizar este estilo para varias páginas requiere mucho tiempo, ya que es necesario poner reglas CSS en cada página de tu sitio web.</p>
+                </div>
+                <div><img src="html.png" alt=""></div>
+            </div>
+            <div class="secciones">
+                <div>
+                    <h2>Externo</h2>
+                    <p>Con el CSS externo, enlazarás tus páginas web a un archivo .css externo, que puede ser creado con cualquier editor de texto de tu dispositivo (por ejemplo, Notepad++).
+
+                        Este tipo de CSS es un método más eficiente, especialmente para estilizar un sitio web grande. Al editar un archivo .css, puedes cambiar todo tu sitio de una sola vez.</p>
+                </div>
+                <div><img src="logo.png" alt=""></div>
+            </div>
+        </div>
+        <div class="menu-secundario">
+            <a href="" >background-color</a>
+            <a href="" >display</a>
+            <a href="" >padding</a>
+            <a href="" >margin</a>
+            <a href="" >text-align</a>
+            <a href="" >width</a>
+            <a href="" >color</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Espero que te haya gustado la pagina con amor ALEX :)</p>
+    </footer>
+
+</body>
+</html>
